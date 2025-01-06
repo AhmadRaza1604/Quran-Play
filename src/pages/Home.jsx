@@ -10,7 +10,8 @@ const Home = () => {
       let config = {
         method: 'get',
       maxBodyLength: Infinity,
-        url: 'https://api.quran.com/api/v4/quran/verses/imlaei?chapter_number=55',
+        url: `https://api.quran.com/api/v4/quran/translations/${158}?chapter_number=1`,
+        // url: `https://api.quran.com/api/v4/resources/tafsirs`,
         headers: { 
           'Accept': 'application/json'
         }
@@ -18,8 +19,8 @@ const Home = () => {
       
       axios(config)
       .then((response) => {
-        console.log(response.data.verses);
-        setData(response.data.verses)
+        console.log(response.data);
+        setData(response.data.translations)
       })
       .catch((error) => {
         console.log(error);
@@ -32,8 +33,8 @@ const Home = () => {
         <h1 className='text-4xl mb-4 bg-red-500 p-2 rounded-xl' >﷽</h1>
         <div className='flex flex-row-reverse items-center justify-center w-3/4 p-5 bg-gray-200 rounded-3xl flex-wrap'>
         {data?.map((item) => (
-          <div key={item.id} className=' mb-2 bg-green-600 py-1 px-4 rounded-full text-white'>
-            <h1>o{item.text_imlaei}</h1>
+          <div key={item.id} className=' mb-2 bg-green-600 py-1 px-4 rounded-2xl text-white'>
+            <h1>{item.text}</h1>
           </div>
         ))}
         </div>
