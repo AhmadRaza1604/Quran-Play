@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className='w-full h-fit bg-gray-800 z-50 fixed top-0  py-4  px-3 md:px-10  text-white flex justify-between items-center'>
             <div className='flex flex-row gap-2'>
                 <img src='/Logo.png' className='w-10'/>
-                <h1 className='text-2xl font-thin text-green-200'>QuranPlay</h1>
+                <h1 className='text-2xl font-thin text-green-200'>TheQuran</h1>
             </div>
             <div className=' md:flex hidden bg-green-400 w-10/12 h-12 rounded-full items-center justify-end px-4'>
             <div>
