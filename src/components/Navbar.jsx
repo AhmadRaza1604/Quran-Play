@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <>
         <div className='w-full h-fit bg-gray-800 z-50 fixed top-0  py-4  px-3 md:px-10  text-white flex justify-between items-center'>
-            <div className='flex flex-row gap-2'>
+            <div className='flex flex-row gap-2 w-3/12'>
                 <img src='/Logo.png' className='w-10'/>
                 <h1 className='text-2xl font-thin text-green-200'>TheQuran</h1>
             </div>

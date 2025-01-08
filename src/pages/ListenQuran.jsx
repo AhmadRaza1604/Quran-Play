@@ -111,7 +111,7 @@ const ListenQuran = () => {
                            
                             {show1 &&
                             <div className='flex flex-col items-center bg-green-500 p-4 rounded-xl text-white w-11/12 md:w-4/6 lg:w-2/4'>
-                                <h1 className='mb-3 font-semibold text-lg'>{chapters[chapter-1]?.name_simple} by: {reciters[reciter-1]?.reciter_name}</h1>
+                                <h1 className='mb-3 font-semibold text-lg'>Surah {chapters[chapter-1]?.name_simple} by: {reciters[reciter-1]?.reciter_name}</h1>
                             {show &&
                                 <audio controls className='w-11/12'>
                             <source src={recitation.audio_url} type="audio/mpeg"/>

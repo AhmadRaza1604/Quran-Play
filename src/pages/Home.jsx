@@ -87,7 +87,7 @@ const Home = () => {
 
   return (
     <div className='flex flex-col items-center justify-center '>
-        <div className='flex flex-row-reverse items-center justify-center w-3/4 p-5 gap-1 bg-gray-200 rounded-3xl flex-wrap'>
+        <div className='flex flex-row-reverse items-center justify-center w-10/12 lg:w-3/6  p-5 gap-1 bg-gray-100 rounded-xl flex-wrap'>
         <h1 className='text-md mb-4 bg-red-500 w-full text-center rounded-md py-1' >بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
         {!loading &&
           <div className='gap-0'>
