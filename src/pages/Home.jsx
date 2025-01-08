@@ -22,6 +22,7 @@ const Home = () => {
       axios(config)
       .then((response) => {
         setData0(response.data.verse)
+        console.log(response.data)
       })
       .catch((error) => {
         console.log(error);
@@ -87,17 +88,20 @@ const Home = () => {
   return (
     <div className='flex flex-col items-center justify-center '>
         <div className='flex flex-row-reverse items-center justify-center w-3/4 p-5 gap-1 bg-gray-200 rounded-3xl flex-wrap'>
-        <h1 className='text-md mb-4 bg-red-500 p-2 rounded-xl' >بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
+        <h1 className='text-md mb-4 bg-red-500 w-full text-center rounded-md py-1' >بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
         {!loading &&
           <div className='gap-0'>
-          <div  className=' text-end bg-green-600 py-1 px-4 rounded-t-lg text-white'>
+          <div  className=' text-end bg-green-700 py-1 px-4 rounded-t-lg text-white'>
             <h1>{data2?.text_uthmani}</h1>
           </div>
-          <div  className=' text-start bg-blue-600 py-1 px-4 text-white'>
-            <h1 className='text-lg' style={{fontFamily: 'Jameel Noori Nastaleeq, sans-serif'}}>{data4?.text}</h1>
+          <div  className=' text-start bg-blue-700 py-1 px-4 text-white'>
+            <h1 className='text-lg'>{data4?.text}</h1>
           </div>
-          <div  className=' mb-2 text-end bg-teal-600 py-1 px-4 rounded-b-lg text-white'>
+          <div  className=' text-end bg-teal-700 py-1 px-4 text-white'>
             <h1 className='text-lg' style={{fontFamily: 'Jameel Noori Nastaleeq, sans-serif'}}>{data3?.text}</h1>
+          </div>
+          <div  className=' mb-2 text-center bg-sky-800 py-1 px-4 rounded-b-lg text-white'>
+            <h1 className='text-lg' style={{fontFamily: 'Jameel Noori Nastaleeq, sans-serif'}}>{data0?.verse_key}</h1>
           </div>
 
           </div>
