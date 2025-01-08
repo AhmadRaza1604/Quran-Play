@@ -11,8 +11,8 @@ const Navbar = () => {
             url:'/'
         },
         {
-            name:'Read Quran',
-            url:'/read-quran'
+            name:'Recite Quran',
+            url:'/recite-quran'
         },
         {
             name:'Listen Quran',

@@ -9,7 +9,7 @@ function App() {
     return (
       <>
         <Navbar/>
-        <div className='mt-24 z-20'>
+        <div className='mt-20 z-20'>
         {children}
         </div>
       </>
@@ -21,7 +21,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<MainLayout> <Home/> </MainLayout>} />
-        <Route path='/read-quran' element={<MainLayout> <ReadQuran /> </MainLayout>} />
+        <Route path='/recite-quran' element={<MainLayout> <ReadQuran /> </MainLayout>} />
         <Route path='/listen-quran' element={<MainLayout> <ListenQuran/> </MainLayout>} />
         <Route path='/about' element={<MainLayout> <About /> </MainLayout>} />
       </Routes>

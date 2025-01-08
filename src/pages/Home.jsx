@@ -86,6 +86,11 @@ const Home = () => {
 
 
   return (
+    <>
+   <div className='w-full flex flex-row justify-center items-center'>
+      <img src='/assets/Quran4.jpg' className='w-full   object-fill max-h-96 min-h-44 '/>
+      <h1 className='absolute md:text-5xl text-2xl bg-black opacity-60 w-full text-center py-1 text-white font-semibold '>The Quran</h1>
+    </div>
     <div className='flex flex-col items-center justify-center '>
         <div className='flex flex-row-reverse items-center justify-center w-10/12 lg:w-3/6  p-5 gap-1 bg-gray-100 rounded-xl flex-wrap'>
         <h1 className='text-md mb-4 bg-red-500 w-full text-center rounded-md py-1' >بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
@@ -110,6 +115,7 @@ const Home = () => {
       
         </div>
         </div>
+    </>
   )
 };
 
