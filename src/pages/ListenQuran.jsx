@@ -90,7 +90,7 @@ const ListenQuran = () => {
       <img src='/assets/Quran4.jpg' className='w-full   object-fill max-h-96 min-h-44 '/>
       <h1 className='absolute md:text-5xl text-2xl bg-black opacity-60 w-full text-center py-1 text-white font-semibold '>Listen The Quran</h1>
     </div>
-        <div className='justify-center flex flex-col items-center pt-6'>
+        <div className='justify-center flex flex-col items-center py-6'>
                <div className='flex flex-row  gap-4 items-center w-11/12 md:w-4/6 lg:w-2/4'>
                <select value={reciter} onChange={(e)=>{setReciter(e.target.value)
                 setShow(false)
